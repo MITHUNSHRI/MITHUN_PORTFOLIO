@@ -1,0 +1,69 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .mesh-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: radial-gradient(circle at 20% 20%, rgba(14, 165, 233, 0.18) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, rgba(139, 92, 246, 0.18) 0%, transparent 50%),
+                radial-gradient(circle at 50% 50%, rgba(15, 23, 42, 0.8) 0%, #020617 100%);
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .glass-panel {
+    background: rgba(15, 23, 42, 0.65);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 24px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  }
+
+  .glass-card {
+    background: rgba(15, 23, 42, 0.6);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+  }
+
+  .neon-border {
+    border: 1px solid transparent;
+    background-image: linear-gradient(#0f172a, #0f172a), linear-gradient(to right, #0ea5e9, #8b5cf6);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+  }
+
+  .skill-node {
+    padding: 6px 12px;
+    border-radius: 9999px;
+    font-size: 11px;
+    background: rgba(14, 165, 233, 0.12);
+    border: 1px solid rgba(14, 165, 233, 0.35);
+    color: #7dd3fc;
+    transition: all 0.2s ease;
+  }
+
+  .skill-node:hover {
+    background: rgba(14, 165, 233, 0.25);
+    border-color: rgba(14, 165, 233, 0.6);
+    box-shadow: 0 0 12px rgba(14, 165, 233, 0.3);
+  }
+
+  .ai-glow {
+    box-shadow: 0 0 20px rgba(139, 92, 246, 0.45);
+  }
+
+  .indicator {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #22c55e;
+    box-shadow: 0 0 8px #22c55e;
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Mithun Shri K M - Futuristic 3D AI Developer Portfolio",
+  "description": "A futuristic 3D digital resume and personal portfolio for Mithun Shri K M, featuring an AI recruiter assistant, interactive skill universe, 3D career timeline, project gallery, and multilingual voice agent.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
